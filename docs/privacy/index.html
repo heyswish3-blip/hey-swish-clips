@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Hey Swish Clips</title>
+  <meta name="description" content="Privacy Policy for Hey Swish Clips: TikTok Login Kit, Content Posting API, YouTube OAuth/API, data use, storage, and your rights.">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="../">Hey Swish Clips</a>
+      <nav class="site">
+        <a href="../">Home</a>
+        <a href="../terms/">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: September 2026. App name: Hey Swish Clips.</p>
+      <p>This policy explains what data Hey Swish Clips uses when you connect your own TikTok or YouTube account, why it is used, where it is stored, and what rights you have. Hey Swish Clips runs locally on your own computer; there is no hosted service that collects your data, no analytics, and no tracking on this website.</p>
+    </section>
+
+    <section>
+      <h2>1. TikTok Login Kit</h2>
+      <p>When you connect a TikTok account, the app uses TikTok Login Kit (OAuth). TikTok shows you a consent screen where you approve the requested scopes. The app receives:</p>
+      <ul class="tight">
+        <li>basic account identity (<code>user.info.basic</code>): the account identifier and nickname, used only to confirm which account is connected and to address API calls to it;</li>
+        <li>an access token and a refresh token, used only to call TikTok APIs on your behalf when you run the tool.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. TikTok Content Posting API</h2>
+      <p>When you publish a clip to TikTok, the app uses the official Content Posting API (<code>video.publish</code>) and sends:</p>
+      <ul class="tight">
+        <li>the video file you selected, its caption, and the privacy setting you chose (private by default until your app is approved for public posting);</li>
+        <li>account capability data read from TikTok immediately before posting (available privacy options and posting limits), used only to validate that the post is allowed.</li>
+      </ul>
+      <p>TikTok returns a publish identifier, which is stored locally so the tool can track posting status. Videos are posted only when you explicitly run the tool.</p>
+    </section>
+
+    <section>
+      <h2>3. YouTube OAuth and YouTube Data API</h2>
+      <p>When you connect a YouTube channel, the app uses Google OAuth (upload scope) and the official YouTube Data API. Google shows you a consent screen first. The app receives:</p>
+      <ul class="tight">
+        <li>an access token and a refresh token, used only to upload videos you select;</li>
+        <li>uploads are created as <strong>private</strong> by default.</li>
+      </ul>
+      <p>YouTube returns a video identifier, which is stored locally so the tool can track upload status.</p>
+    </section>
+
+    <section>
+      <h2>4. What other data is used</h2>
+      <ul class="tight">
+        <li><strong>Your source material:</strong> video files and transcripts you provide stay on your computer and are processed locally.</li>
+        <li><strong>Clip metadata:</strong> titles, captions and quality scores generated locally to prepare posts.</li>
+        <li><strong>Technical logs:</strong> local log files used for debugging. They never contain tokens or passwords.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Purpose</h2>
+      <p>All data is used solely to set up and operate <strong>your own</strong> content pipeline: connecting your accounts, preparing clips, and publishing content you approve to those accounts. Data is never used for advertising, profiling, or any other purpose.</p>
+    </section>
+
+    <section>
+      <h2>6. Storage and secrets</h2>
+      <ul class="tight">
+        <li>Tokens and API secrets are stored only in local configuration files on your own computer (excluded from public source control) and, for automation workflows, in the encrypted credential store of your own local automation setup.</li>
+        <li>Secrets are never displayed publicly, never committed to public code, never sent in URLs where avoidable, and never included in log files.</li>
+        <li>Removing the local configuration files deletes the stored secrets from the tool.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Sharing</h2>
+      <p>Data is shared only with the platforms you connect (TikTok, Google/YouTube), and only through their official APIs when you run the tool. Nothing is sold or shared with other third parties. This website itself collects nothing.</p>
+    </section>
+
+    <section>
+      <h2>8. Retention</h2>
+      <p>Local working files are kept according to the tool's documented retention rules (failed records expire; completed results are kept). You can delete any local file at any time. Revoking access in your TikTok or Google account settings immediately stops the tool from acting on your behalf; already published content must be removed in the respective platform app.</p>
+    </section>
+
+    <section>
+      <h2>9. Your rights</h2>
+      <p>Depending on where you live, you may have the right to access, correct, or delete your data, and to withdraw consent at any time. Because the tool stores everything locally with you, you can exercise these rights directly: inspect or delete the local files, revoke the app's access in your TikTok or Google account settings, or stop using the tool. To ask a question about this policy, open an issue in the public GitHub repository linked below.</p>
+    </section>
+
+    <section>
+      <h2>10. Children</h2>
+      <p>Hey Swish Clips is a creator tool and is not directed at children. It must only be used in line with TikTok's and Google's own age requirements.</p>
+    </section>
+
+    <section>
+      <h2>11. Changes</h2>
+      <p>If this policy changes materially, the updated version will be published on this page with a new date.</p>
+    </section>
+
+    <section>
+      <h2>12. Contact</h2>
+      <p>Questions about this policy: please open an issue at <a href="https://github.com/heyswish3-blip/hey-swish-clips">github.com/heyswish3-blip/hey-swish-clips</a>. No personal contact details are published here.</p>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p><a href="../">Hey Swish Clips</a> · <a href="../terms/">Terms of Service</a></p>
+    </div>
+  </footer>
+</body>
+</html>

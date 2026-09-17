@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hey Swish Clips — Short-form video creation tool</title>
+  <meta name="description" content="Hey Swish Clips is a local tool for creating short-form video clips and publishing them to accounts you connect.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="./">Hey Swish Clips</a>
+      <nav class="site">
+        <a href="privacy/">Privacy Policy</a>
+        <a href="terms/">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Hey Swish Clips</h1>
+      <p class="lead">A local tool for creating short-form video clips — and publishing them to TikTok and YouTube accounts you connect yourself.</p>
+      <div class="buttons">
+        <a class="btn" href="privacy/">Privacy Policy</a>
+        <a class="btn ghost" href="terms/">Terms of Service</a>
+      </div>
+    </div>
+
+    <section>
+      <h2>What it does</h2>
+      <p>Hey Swish Clips helps a creator turn long videos, such as podcast episodes, into short vertical clips. It runs on your own computer and can:</p>
+      <ul class="tight">
+        <li>transcribe spoken audio,</li>
+        <li>suggest short clip candidates with titles and captions,</li>
+        <li>render ready-to-post vertical video files with burned-in captions,</li>
+        <li>upload clips through official platform APIs <strong>only after you connect your own accounts and approve each step</strong>.</li>
+      </ul>
+      <div class="card">
+        <h3>Your accounts, your control</h3>
+        <p>Nothing is posted automatically to strangers, and nothing is posted without setup: publishing requires your own connected TikTok or YouTube account, your explicit approval during login, and your own API credentials stored locally on your machine. Test uploads stay private by default.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>How publishing works</h2>
+      <ul class="tight">
+        <li><strong>TikTok:</strong> the tool uses TikTok Login Kit to connect your account and the official Content Posting API to submit videos you approve.</li>
+        <li><strong>YouTube:</strong> the tool uses Google OAuth to connect your channel and the official YouTube Data API to upload videos as private by default.</li>
+        <li>Login tokens and secrets are stored only in local configuration files on your own computer. They are never published, never committed to public code, and never shown publicly.</li>
+      </ul>
+      <p class="meta">Hey Swish Clips is an independent personal project. It is not affiliated with, endorsed, or sponsored by TikTok, ByteDance, Google, YouTube, or Meta.</p>
+    </section>
+
+    <section>
+      <h2>Legal</h2>
+      <p>Please read the documents that govern the use of this tool:</p>
+      <div class="buttons">
+        <a class="btn" href="privacy/">Privacy Policy</a>
+        <a class="btn ghost" href="terms/">Terms of Service</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>Hey Swish Clips — a personal short-form video tool.<br>
+      Source code: <a href="https://github.com/heyswish3-blip/hey-swish-clips">github.com/heyswish3-blip/hey-swish-clips</a><br>
+      Contact: please open an issue in the GitHub repository linked above.</p>
+    </div>
+  </footer>
+</body>
+</html>
